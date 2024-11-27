@@ -1,5 +1,8 @@
 {
   "expo": {
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
     "name": "autenticacao-google",
     "slug": "autenticacao-google",
     "version": "1.0.0",
@@ -16,10 +19,12 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.autenticacaogoogle"
     },
     "web": {
       "favicon": "./assets/favicon.png"
